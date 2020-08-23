@@ -11,7 +11,7 @@ var player = document.querySelector('#player');
 var playeronline = document.querySelector('#playeronline');
 var input = document.querySelector('#message');
 var text = 0;
-
+var abcabc = 0;
 
 
 function abconline() {
@@ -22,7 +22,9 @@ function abconline() {
  posit = player.getAttribute('position');
  abcc4 = 1;
  console.log(posit);
- input.value = posit;
+ abcabc = posit["x"] + " " + posit["y"] + " " + posit["z"];
+console.log(abcabc); 
+ input.value = abcabc;
 console.log(input.value);
  form.checked = true;
  form.addEventListener('change', function(e) {
