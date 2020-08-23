@@ -27,7 +27,6 @@ function abconline() {
  input.value = abcabc;
  form.checked = true;
  if (form.checked == true) {
-  e.preventDefault();
   colorbtn = document.querySelector('#colorbtn');
    input = document.querySelector('#message');
    text = input.value;
