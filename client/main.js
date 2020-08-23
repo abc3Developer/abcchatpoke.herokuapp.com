@@ -19,6 +19,7 @@ var abcabc1 = 0;
 var abcabc2 = 0;
 
 function abconline() {
+  newMessage1.innerText = '';
   player = document.querySelector('#player');
 
 player2 = document.querySelector('#player2');
@@ -69,8 +70,8 @@ newMessage2 = document.querySelector('#newMessage2');
 form = document.querySelector('#form');
 
   if (colorbtn.style.backgroundColor == 'red') {
-   var container = document.querySelector('#section');
-  var newMessage1 = document.createElement('p');
+   container = document.querySelector('#section');
+  newMessage1 = document.createElement('p');
   newMessage1.id = 'newMessage1';
   newMessage1.innerText = text;
   container.appendChild(newMessage1);
@@ -79,8 +80,8 @@ form = document.querySelector('#form');
   }
   if (colorbtn.style.backgroundColor == 'blue') {
       var container = document.querySelector('#section');
-  var newMessage2 = document.createElement('p');
-  newMessage2.id = 'newMessage1';
+  newMessage2 = document.createElement('p');
+  newMessage2.id = 'newMessage2';
   newMessage2.innerText = text;
   container.appendChild(newMessage2);
    var seperator = document.createElement('br');
@@ -96,19 +97,24 @@ form = document.querySelector('#form');
 
 function abconline2() {
   if (colorbtn.style.backgroundColor == 'red') {
+      newMessage1 = document.querySelector('#newMessage1');
+newMessage2 = document.querySelector('#newMessage2');
    playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
  positionnavity4.value = newMessage1.innerText;
   playeronline1.setAttributeNode(positionnavity4);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
+      newMessage1 = document.querySelector('#newMessage1');
+newMessage2 = document.querySelector('#newMessage2');
    playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
 positionnavity5.value = newMessage2.innerText;
  playeronline2.setAttributeNode(positionnavity5);
   }
 
- 
+ container.removeChild(newMessage2);
+ container.removeChild(newMessage1);
   form.checked = false;
 }
 
