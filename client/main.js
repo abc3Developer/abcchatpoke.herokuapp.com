@@ -26,7 +26,7 @@ function abconline() {
 
  input.value = abcabc;
  form.checked = true;
- form.addEventListener('change', function(e) {
+ if (form.checked == true) {
   e.preventDefault();
   colorbtn = document.querySelector('#colorbtn');
    input = document.querySelector('#message');
@@ -34,7 +34,7 @@ function abconline() {
   socket.emit('message', text);
   input.value = '';
 
-});
+ }
  }, 50);
  }
 

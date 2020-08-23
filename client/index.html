@@ -141,19 +141,12 @@
 <a-entity id="playeronline" position="12 1.8 -14" rotation="0 -45 0" obj-model="obj: url(object2/pikachu/pikachu-pokemon-go.obj); mtl: url(object2/pikachu/pikachu-pokemon-go.mtl)" material="color:yellow" scale="0.03 0.03 0.03"></a-entity>
 
  
-<button class="a-enter-vr-button" aframe-injected="" style="background-color:red; opacity:0.5">
-<section id="section">
+<button class="a-enter-vr-button" aframe-injected="">
+<main>
+    <section id="section">
       <p id="newMessage1"></p>
       <p id="newMessage2"></p>
-    </section></button>
-</a-scene>
- 
-
- <main>
-    <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
- <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
-<div id="colorbtn">COLOR</div>
-    
+    </section>
     <div>
       <form>
         <div>
@@ -163,24 +156,24 @@
           <input id="form" type="checkbox">
         </div>
       </form>
-      <input id="scentrue" type="checkbox">
     </div>
   </main>
+</button>
+</a-scene>
+ 
+  <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
+ <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
+<div id="colorbtn">COLOR</div>
+ 
+  <input id="scentrue" type="checkbox">
 
-
- <script src="main.js"></script>playeronline = document.querySelector('#playeronline');
-  let positionnavity4 = document.createAttribute('position');
-  if (colorbtn.style.backgroundColor == 'red') {
- positionnavity4.value = newMessage1.innerText;
-  }
-  if (colorbtn.style.backgroundColor == 'blue') {
-positionnavity4.value = newMessage2.innerText;
-  }
-
-  playeronline.setAttributeNode(positionnavity4);
-  form.checked = false;
+ <script src="main.js"></script>
+ 
 <script>
  var scene = document.querySelector('#scene');
+ 
+var player = document.querySelector('#player');
+
 function tiemsce() {
   scene = document.querySelector('#scene');
   setTimeout(() => {
@@ -213,8 +206,6 @@ scentrue.addEventListener('change', function () {
    scene.style.display = 'flex';
    abconline();
 });
-var player = document.querySelector('#player');
-
 
 
 </script>
