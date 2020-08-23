@@ -50,7 +50,7 @@ player2 = document.querySelector('#player2');
   input.value = '';
 
  }
- }, 1000);
+ }, 5000);
 });
  }
 
@@ -66,11 +66,9 @@ form = document.querySelector('#form');
 
   if (colorbtn.style.backgroundColor == 'red') {
    newMessage1.innerText = text;
-     console.log(newMessage1.innerText);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
      newMessage2.innerText = text;
-      console.log(newMessage2.innerText);
   }
 
 
