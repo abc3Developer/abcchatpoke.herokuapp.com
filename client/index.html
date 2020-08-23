@@ -138,6 +138,7 @@
 <a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
 
 
+<a-entity id="playeronline" position="12 1.8 -14" rotation="0 -45 0" obj-model="obj: url(objets/pikachu/pikachu-pokemon-go.obj); mtl: url(objets/pikachu/pikachu-pokemon-go.mtl)" material="color:yellow" scale="0.03 0.03 0.03"></a-entity>
 
  
 
@@ -148,8 +149,9 @@
     <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
  <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
 <div id="colorbtn">COLOR</div>
-    <section>
-      <p></p>
+    <section id="section">
+      <p id="newMessage1"></p>
+      <p id="newMessage2"></p>
     </section>
     <div>
       <form>
@@ -157,7 +159,7 @@
           <input id="message">
         </div>
         <div>
-          <button>Send</button>
+          <input id="form" type="checkbox">
         </div>
       </form>
     </div>
@@ -186,6 +188,13 @@ btnuseer24 = document.querySelector('#btnuseer24');
 colorbtn = document.querySelector('#colorbtn');
 colorbtn.style.backgroundColor = 'blue';
 }
+
+
+
+
+
+
+
 </script>
 </body>
 </html>
