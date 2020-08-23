@@ -34,7 +34,7 @@ function abconline() {
   input.value = '';
 
  }
- }, 50);
+ }, 500);
 });
  }
 
