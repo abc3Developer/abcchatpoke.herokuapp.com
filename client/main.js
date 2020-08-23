@@ -83,7 +83,6 @@ newMessage2 = document.querySelector('#newMessage2');
   if (abcc4 == 1) {
     abconline2();
   }
-  container.scrollTop = container.scrollHeight;
 });
 
 function abconline2() {
@@ -103,12 +102,6 @@ newMessage2 = document.querySelector('#newMessage2');
 positionnavity5.value = newMessage2.innerText;
  playeronline2.setAttributeNode(positionnavity5);
   }
-
-    container = document.querySelector('#section');
-newMessage1 = document.querySelector('#newMessage1');
-newMessage2 = document.querySelector('#newMessage2');
- container.removeChild(newMessage2);
- container.removeChild(newMessage1);
   form.checked = false;
 }
 
