@@ -70,21 +70,13 @@ form = document.querySelector('#form');
 
   if (colorbtn.style.backgroundColor == 'red') {
    container = document.querySelector('#section');
-  newMessage1 = document.createElement('p');
-  newMessage1.id = 'newMessage1';
+ newMessage1 = document.querySelector('#newMessage1');
   newMessage1.innerText = text;
-  container.appendChild(newMessage1);
-   var seperator = document.createElement('br');
-  container.appendChild(seperator);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
-      var container = document.querySelector('#section');
-  newMessage2 = document.createElement('p');
-  newMessage2.id = 'newMessage2';
+      container = document.querySelector('#section');
+newMessage2 = document.querySelector('#newMessage2');
   newMessage2.innerText = text;
-  container.appendChild(newMessage2);
-   var seperator = document.createElement('br');
-  container.appendChild(seperator);
   }
 
 
@@ -112,6 +104,9 @@ positionnavity5.value = newMessage2.innerText;
  playeronline2.setAttributeNode(positionnavity5);
   }
 
+    container = document.querySelector('#section');
+newMessage1 = document.querySelector('#newMessage1');
+newMessage2 = document.querySelector('#newMessage2');
  container.removeChild(newMessage2);
  container.removeChild(newMessage1);
   form.checked = false;
