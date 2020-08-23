@@ -23,6 +23,9 @@ player2 = document.querySelector('#player2');
    playeronline1 = document.querySelector('#playeronline1');
    playeronline2 = document.querySelector('#playeronline2');
    form = document.querySelector('#form');
+
+ document.addEventListener('keydown', function () {
+
  if (colorbtn.style.backgroundColor == 'red') {
    player.id = 'player1';
    player1 = document.querySelector('#player1');
@@ -33,9 +36,6 @@ player2 = document.querySelector('#player2');
    player2 = document.querySelector('#player2');
     posit = player2.getAttribute('position');
   }
- document.addEventListener('keydown', function () {
-
-
  abcc4 = 1;
  
  abcabc = posit["x"] + " " + posit["y"] + " " + posit["z"];
