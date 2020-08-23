@@ -8,6 +8,8 @@ var form = document.querySelector('#form');
 var  posit = 0;
 var abcc4 = 0;
 var player = document.querySelector('#player');
+var player1 = document.querySelector('#player1');
+var player2 = document.querySelector('#player2');
   var playeronline1 = document.querySelector('#playeronline1');
    var playeronline2 = document.querySelector('#playeronline2');
 var input = document.querySelector('#message');
@@ -16,12 +18,24 @@ var abcabc = 0;
 
 function abconline() {
   player = document.querySelector('#player');
+
+player2 = document.querySelector('#player2');
    playeronline1 = document.querySelector('#playeronline1');
    playeronline2 = document.querySelector('#playeronline2');
    form = document.querySelector('#form');
+ if (colorbtn.style.backgroundColor == 'red') {
+   player.id = 'player1';
+   player1 = document.querySelector('#player1');
+    posit = player1.getAttribute('position');
+  }
+  if (colorbtn.style.backgroundColor == 'blue') {
+    player.id = 'player2';
+   player2 = document.querySelector('#player2');
+    posit = player2.getAttribute('position');
+  }
  document.addEventListener('keypress', function () {
  setInterval(() => {
- posit = player.getAttribute('position');
+
  abcc4 = 1;
  
  abcabc = posit["x"] + " " + posit["y"] + " " + posit["z"];
