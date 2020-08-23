@@ -69,7 +69,7 @@ form = document.querySelector('#form');
   if (colorbtn.style.backgroundColor == 'red') {
    container = document.querySelector('#section');
  newMessage1 = document.createElement('p');
-  newMessage.innerText = text;
+  newMessage1.innerText = text;
   container.appendChild(newMessage1);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
