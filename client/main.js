@@ -4,9 +4,9 @@ var form = document.querySelector('form');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  var useer = document.querySelector('#useer');
+  var btnuseer = document.querySelector('#btnuseer');
   var input = document.querySelector('#message');
-  var text = useer.placeholder.value+" :"+input.value;
+  var text = btnuseer.style.backgroundColor+" :"+input.value;
   socket.emit('message', text);
   input.value = '';
 });
@@ -16,7 +16,7 @@ socket.on('message', function(text) {
     return;
   }
   var container = document.querySelector('section');
-  var newMessage = document.createElement('p');
+  var newMessage = document.createElement('#newmens');
   newMessage.innerText = text;
   container.appendChild(newMessage);
 
