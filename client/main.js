@@ -6,7 +6,7 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
   var useer = document.querySelector('#useer');
   var input = document.querySelector('#message');
-  var text = useer.value+" :"+input.value;
+  var text = useer.placeholder.value+" :"+input.value;
   socket.emit('message', text);
   input.value = '';
 });

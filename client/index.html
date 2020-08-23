@@ -19,7 +19,6 @@
   <script src="js/aframe-text-geometry-component.min.js"></script>
       <script src="indexpoke.js"></script>
       <script src="js/ascensorpok.js"></script>
-
       <style>
       .inputy{
         background-color: rgb(245, 152, 152);
@@ -133,27 +132,30 @@
 <a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
 
 <button class="inputy inputy2">
-  <input class="inputy" type="text" placeholder="Name:">
-  <div id="latitud" class="inputy22"></div>
+  <input id="useer" class="inputy22" type="text" placeholder="Name:">
+</button>
+
+<button>
+ <div id="latitud" class="inputy22"></div>
+</button>
+ 
+ <button>
   <div id="longitud" class="inputy22"></div>
 </button>
 
-<div class="a-enter-vr" aframe-injected=""><button class="a-enter-vr-button" aframe-injected=""></button></div>
-<div class="a-enter" aframe-injected="">
-<input id="useer" type="text">
-
+ <button>
 <form>
-        <div>
-          <input id="message">
-        </div>
-        <div>
-          <button>Send</button>
-        </div>
-      </form>
-      <button class="a-enter-vr-button" aframe-injected=""></button>
-      </div>
+  <input id="message" class="inputy22">
+  <button>Send</button class="inputy22">
+</form>
+</button>
+
+
+
 </a-scene>
   <script src="main.js"></script>
+  <script>
+  
+  </script>
 </body>
-
 </html>
