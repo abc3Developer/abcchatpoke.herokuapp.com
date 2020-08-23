@@ -33,7 +33,7 @@ player2 = document.querySelector('#player2');
    player2 = document.querySelector('#player2');
     posit = player2.getAttribute('position');
   }
- document.addEventListener('keypress', function () {
+ document.addEventListener('keydown', function () {
  setInterval(() => {
 
  abcc4 = 1;
