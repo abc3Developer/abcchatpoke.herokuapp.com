@@ -19,7 +19,6 @@ var abcabc1 = 0;
 var abcabc2 = 0;
 
 function abconline() {
-  newMessage1.innerText = '';
   player = document.querySelector('#player');
 
 player2 = document.querySelector('#player2');
