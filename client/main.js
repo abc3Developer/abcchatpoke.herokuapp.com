@@ -34,7 +34,7 @@ player2 = document.querySelector('#player2');
     posit = player2.getAttribute('position');
   }
  document.addEventListener('keydown', function () {
- setInterval(() => {
+
 
  abcc4 = 1;
  
@@ -50,7 +50,6 @@ player2 = document.querySelector('#player2');
   input.value = '';
 
  }
- }, 5000);
 });
  }
 
