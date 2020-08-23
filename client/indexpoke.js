@@ -19,7 +19,6 @@ var puerta6 = document.querySelector('#puerta6');
 var puerta7 = document.querySelector('#puerta7');
 
 
-
 AFRAME.registerComponent('puertas-events', {
   init: function () {
       var el = this.el;

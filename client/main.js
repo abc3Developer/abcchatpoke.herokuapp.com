@@ -13,12 +13,12 @@ var input = document.querySelector('#message');
 var text = 0;
 var abcabc = 0;
 
-
 function abconline() {
   player = document.querySelector('#player');
    playeronline = document.querySelector('#playeronline');
    form = document.querySelector('#form');
-  setInterval(() => {
+ document.addEventListener('keypress', function () {
+ setInterval(() => {
  posit = player.getAttribute('position');
  abcc4 = 1;
  
@@ -35,6 +35,7 @@ function abconline() {
 
  }
  }, 50);
+});
  }
 
 
