@@ -55,6 +55,24 @@
        <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
 </head>
 <body onload="saltarr(); saltyf(); supersalt(); tiemsce();">
+   <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
+ <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
+<div id="colorbtn">COLOR</div>
+ <main>
+    <section>
+      <p></p>
+    </section>
+    <div>
+      <form>
+        <div>
+          <input id="message">
+        </div>
+        <div>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+  </main>
   <a-scene id="scene" background="" debug="" physics="debug: true" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" auto-enter-vr="">
     <a-sky id="sky" radius="10000" material="src: materials/spaciosss.png;"></a-sky>
 <a-entity id="sol" position="-2500 7000 -4000" rotation="105 30 0" obj-model="obj: url(objets/asteroids2.obj); mtl: url(objets/asteroids2.mtl)" scale="800 800 800">
@@ -137,35 +155,12 @@
 <a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
 
 
-<a-entity id="selecuseer1" position="-10 2 7" text-geometry="value:RED" width="1" material="color:red;" selecuseer1-events></a-entity>
-
-<a-entity id="selecuseer2" position="-12 2 7" text-geometry="value:BLUE" width="1" material="color:blue;" selecuseer2-events></a-entity>
-
-<div class="a-enter-vr" aframe-injected="" style="z-index:9999"><button id="btnuseer" class="a-enter-vr-button" aframe-injected="" style="z-index:9999">
-
 
  
 
 </a-scene>
  
-   <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
- <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
-<div id="colorbtn">COLOR</div>
- <main>
-    <section>
-      <p></p>
-    </section>
-    <div>
-      <form>
-        <div>
-          <input id="message">
-        </div>
-        <div>
-          <button>Send</button>
-        </div>
-      </form>
-    </div>
-  </main>
+
 
 
  <script src="main.js"></script>
@@ -174,7 +169,7 @@ function tiemsce() {
   var scene = document.querySelector('#scene');
   setTimeout(() => {
     scene.style.display = 'flex';
-  }, 30000);
+  }, 5000);
 }
 var colorbtn = document.querySelector('#colorbtn');
 var btnuseer12 = document.querySelector('#btnuseer12');
@@ -182,10 +177,12 @@ var btnuseer24 = document.querySelector('#btnuseer24');
 
 function btnuser1() {
 btnuseer12 = document.querySelector('#btnuseer12');
+colorbtn = document.querySelector('#colorbtn');
 colorbtn.style.backgroundColor = 'red';
 }
 function btnuser2() {
-btnuseer12 = document.querySelector('#btnuseer12');
+btnuseer24 = document.querySelector('#btnuseer24');
+colorbtn = document.querySelector('#colorbtn');
 colorbtn.style.backgroundColor = 'blue';
 }
 </script>

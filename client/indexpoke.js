@@ -19,41 +19,6 @@ var puerta6 = document.querySelector('#puerta6');
 var puerta7 = document.querySelector('#puerta7');
 
 
-var selecuseer1 = document.querySelector('#selecuseer1');
-
-var selecuseer2 = document.querySelector('#selecuseer2');
-
-var btnuseer = document.querySelector('#btnuseer');
-
-
-AFRAME.registerComponent('selecuseer1-events', {
-  init: function () {
-      var el = this.el;
-      el.addEventListener('click', function () {
- btnuseer = document.querySelector('#btnuseer');
-   btnuseer.style.backgroundColor = 'red';
-    })}});
-
-AFRAME.registerComponent('selecuseer2-events', {
-  init: function () {
-      var el = this.el;
-      el.addEventListener('click', function () {
- btnuseer = document.querySelector('#btnuseer');
-   btnuseer.style.backgroundColor = 'blue';
-    })}});
-
-
-setTimeout(() => {
-  if (btnuseer.style.backgroundColor == 'blue';) {
-    btnuseer.textContent = 'blue';
-  }
-  if (btnuseer.style.backgroundColor == 'red';) {
-    btnuseer.textContent = 'red';
-  }
-}, 60000);
-
-
-
 
 
 
