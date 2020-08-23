@@ -21,11 +21,10 @@ function abconline() {
   setInterval(() => {
  posit = player.getAttribute('position');
  abcc4 = 1;
- console.log(posit);
+ 
  abcabc = posit["x"] + " " + posit["y"] + " " + posit["z"];
-console.log(abcabc); 
+
  input.value = abcabc;
-console.log(input.value);
  form.checked = true;
  form.addEventListener('change', function(e) {
   e.preventDefault();
@@ -33,7 +32,6 @@ console.log(input.value);
    input = document.querySelector('#message');
    text = input.value;
   socket.emit('message', text);
-  console.log(text);
   input.value = '';
 
 });
@@ -52,12 +50,10 @@ form = document.querySelector('#form');
 
   if (colorbtn.style.backgroundColor == 'red') {
    newMessage1.innerText = text;
-    console.log(text);
      console.log(newMessage1.innerText);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
      newMessage2.innerText = text;
-      console.log(text);
       console.log(newMessage2.innerText);
   }
 
