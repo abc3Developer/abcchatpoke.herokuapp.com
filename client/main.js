@@ -1,8 +1,8 @@
 var socket = io();
   var container = document.querySelector('#section');
 
-var newMessage1 = document.querySelector('#newMessage1');
-var newMessage2 = document.querySelector('#newMessage2');
+var newMessage1 = 0;
+var newMessage2 = 0;
 
 var form = document.querySelector('#form');
 var  posit1 = 0;
@@ -64,44 +64,36 @@ socket.on('message', function(text) {
   if (!text) {
     return;
   }
-  newMessage1 = document.querySelector('#newMessage1');
-newMessage2 = document.querySelector('#newMessage2');
 form = document.querySelector('#form');
 
   if (colorbtn.style.backgroundColor == 'red') {
    container = document.querySelector('#section');
- newMessage1 = document.querySelector('#newMessage1');
-  newMessage1.innerText = text;
+ newMessage1 = document.createElement('p');
+  newMessage.innerText = text;
+  container.appendChild(newMessage1);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
       container = document.querySelector('#section');
-newMessage2 = document.querySelector('#newMessage2');
+ newMessage2 = document.createElement('p');
   newMessage2.innerText = text;
+  container.appendChild(newMessage2);
   }
-
-
   if (abcc4 == 1) {
-    abconline2();
-  }
-});
-
-function abconline2() {
-  if (colorbtn.style.backgroundColor == 'red') {
-      newMessage1 = document.querySelector('#newMessage1');
-newMessage2 = document.querySelector('#newMessage2');
+ if (colorbtn.style.backgroundColor == 'red') {
    playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
  positionnavity4.value = newMessage1.innerText;
   playeronline1.setAttributeNode(positionnavity4);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
-      newMessage1 = document.querySelector('#newMessage1');
-newMessage2 = document.querySelector('#newMessage2');
    playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
 positionnavity5.value = newMessage2.innerText;
  playeronline2.setAttributeNode(positionnavity5);
   }
-  form.checked = false;
-}
+    form.checked = false;
+  container.removeChild(newMessage1);
+  container.removeChild(newMessage2);
+  }
+});
 
