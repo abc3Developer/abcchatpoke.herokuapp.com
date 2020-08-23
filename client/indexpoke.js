@@ -19,6 +19,48 @@ var puerta6 = document.querySelector('#puerta6');
 var puerta7 = document.querySelector('#puerta7');
 
 
+var selecuseer1 = document.querySelector('#selecuseer1');
+
+var selecuseer2 = document.querySelector('#selecuseer2');
+
+var btnuseer1 = document.querySelector('#btnuseer1');
+
+var btnuseer2 = document.querySelector('#btnuseer2');
+
+
+
+AFRAME.registerComponent('selecuseer1-events', {
+  init: function () {
+      var el = this.el;
+      el.addEventListener('click', function () {
+     selecuseer1 = document.querySelector('#selecuseer1');
+      btnuseer1.style.backgroundColor = 'red';
+    btnuseer2.style.display = 'none';
+      
+    })}});
+
+    AFRAME.registerComponent('selecuseer2-events', {
+  init: function () {
+      var el = this.el;
+      el.addEventListener('click', function () {
+     selecuseer2 = document.querySelector('#selecuseer2');
+      btnuseer2.style.backgroundColor = 'blue';
+      btnuseer1.style.display = 'none';
+    
+      
+    })}});
+
+AFRAME.registerComponent('selecuseer2-events', {
+  init: function () {
+      var el = this.el;
+      el.addEventListener('click', function () {
+     selecuseer2 = document.querySelector('#selecuseer2');
+      
+    
+      
+    })}});
+
+
 
 
 

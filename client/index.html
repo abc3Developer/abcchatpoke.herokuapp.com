@@ -132,17 +132,16 @@
 <a-entity id="bulbasur" position="12 0.1 -14" rotation="0 -135 0" obj-model="obj: url(objets//bulbasur/bulbasaur-pokemon-go.obj); mtl: url(objets//bulbasur/bulbasaur-pokemon-go.mtl)" material="color:yellow" scale="0.15 0.15 0.15"></a-entity>
 <a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
 
-<button class="inputy inputy2">
-  <input id="useer" class="inputy22" type="text" placeholder="Name:">
-</button>
 
-<button>
- <div id="latitud" class="inputy22"></div>
-</button>
- 
- <button>
-  <div id="longitud" class="inputy22"></div>
-</button>
+<a-entity id="selecuseer1" position="-10 4 15" text-geometry="value:RED" width="1" material="color:red;" selecuseer1-events></a-entity>
+
+<a-entity id="selecuseer2" position="-12 4 15" text-geometry="value:BLUE" width="1" material="color:blue;" selecuseer2-events></a-entity>
+
+
+
+
+<div class="a-enter-vr" aframe-injected=""><button id="btnuseer1" class="a-enter-vr-button" aframe-injected=""></button></div>
+<div class="a-enter-vr" aframe-injected=""><button id="btnuseer2" class="a-enter-vr-button" aframe-injected=""></button></div>
 
  <button>
 <form>
@@ -160,7 +159,7 @@
   setTimeout(() => {
     sky.style.display = "flex";
     console.log('sky.flex');
-  }, 10000);
+  }, 100000);
   </script>
 </body>
 </html>
