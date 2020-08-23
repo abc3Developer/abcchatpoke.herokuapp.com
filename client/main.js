@@ -8,14 +8,16 @@ var form = document.querySelector('#form');
 var  posit = 0;
 var abcc4 = 0;
 var player = document.querySelector('#player');
-var playeronline = document.querySelector('#playeronline');
+  var playeronline1 = document.querySelector('#playeronline1');
+   var playeronline2 = document.querySelector('#playeronline2');
 var input = document.querySelector('#message');
 var text = 0;
 var abcabc = 0;
 
 function abconline() {
   player = document.querySelector('#player');
-   playeronline = document.querySelector('#playeronline');
+   playeronline1 = document.querySelector('#playeronline1');
+   playeronline2 = document.querySelector('#playeronline2');
    form = document.querySelector('#form');
  document.addEventListener('keypress', function () {
  setInterval(() => {
@@ -65,31 +67,19 @@ form = document.querySelector('#form');
 });
 
 function abconline2() {
-  playeronline = document.querySelector('#playeronline');
+   playeronline1 = document.querySelector('#playeronline1');
+   playeronline2 = document.querySelector('#playeronline2');
   let positionnavity4 = document.createAttribute('position');
   if (colorbtn.style.backgroundColor == 'red') {
  positionnavity4.value = newMessage1.innerText;
+  playeronline1.setAttributeNode(positionnavity4);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
 positionnavity4.value = newMessage2.innerText;
+ playeronline2.setAttributeNode(positionnavity4);
   }
 
-  playeronline.setAttributeNode(positionnavity4);
+ 
   form.checked = false;
 }
 
-
-
-
-
-function iniciaronline() {
-  if (colorbtn.style.backgroundColor == 'red') {
-    for (let index = 0; index < p.length; index++) {
-      const element = p[index];
-      
-    }
-  }
-  if (colorbtn.style.backgroundColor == 'red') {
-    
-  }
-}
