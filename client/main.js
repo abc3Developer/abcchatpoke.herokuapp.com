@@ -4,9 +4,9 @@ var form = document.querySelector('form');
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
-  var btnuseer00 = document.querySelector('#btnuseer00');
+  colorbtn = document.querySelector('#colorbtn');
   var input = document.querySelector('#message');
-  var text = btnuseer00.style.backgroundColor+" :"+input.value;
+  var text = colorbtn.style.backgroundColor+" :"+input.value;
   socket.emit('message', text);
   input.value = '';
 });
