@@ -21,20 +21,24 @@ function abconline() {
   setInterval(() => {
  posit = player.getAttribute('position');
  abcc4 = 1;
+ console.log(posit);
  input.value = posit;
+console.log(input.value);
  form.checked = true;
- }, 50);
- }
-
-form.addEventListener('change', function(e) {
+ form.addEventListener('change', function(e) {
   e.preventDefault();
   colorbtn = document.querySelector('#colorbtn');
    input = document.querySelector('#message');
    text = input.value;
   socket.emit('message', text);
+  console.log(text);
   input.value = '';
 
 });
+ }, 50);
+ }
+
+
 
 socket.on('message', function(text) {
   if (!text) {
@@ -46,12 +50,16 @@ form = document.querySelector('#form');
 
   if (colorbtn.style.backgroundColor == 'red') {
    newMessage1.innerText = text;
+    console.log(text);
+     console.log(newMessage1.innerText);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
      newMessage2.innerText = text;
+      console.log(text);
+      console.log(newMessage2.innerText);
   }
 
-form.checked = false;
+
   if (abcc4 == 1) {
     abconline2();
   }
@@ -69,6 +77,7 @@ positionnavity4.value = newMessage2.innerText;
   }
 
   playeronline.setAttributeNode(positionnavity4);
+  form.checked = false;
 }
 
 
