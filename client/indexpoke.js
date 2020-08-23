@@ -43,8 +43,14 @@ AFRAME.registerComponent('selecuseer2-events', {
     })}});
 
 
-
-
+setTimeout(() => {
+  if (btnuseer.style.backgroundColor == 'blue';) {
+    btnuseer.textContent = 'blue';
+  }
+  if (btnuseer.style.backgroundColor == 'red';) {
+    btnuseer.textContent = 'red';
+  }
+}, 60000);
 
 
 
