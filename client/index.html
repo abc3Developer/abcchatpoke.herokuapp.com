@@ -20,6 +20,7 @@
       <script src="indexpoke.js"></script>
       <script src="js/ascensorpok.js"></script>
       <style>
+      input{min-width: 1rem}
       .inputy{
         background-color: rgb(245, 152, 152);
         opacity: 0.7;
@@ -133,12 +134,11 @@
 <div style="color: rgb(255, 251, 0);"></div>
 <a-entity position="-19 10 -48" rotation="0 0 0" text-geometry="value:Proces = 31h" material="color:black" width="0.1" scale="5 5 5"></a-entity>
 <!--pokemons-->
-<a-entity id="pikachu" position="12 3.8 -14" rotation="0 -45 0" obj-model="obj: url(objets/pikachu/pikachu-pokemon-go.obj); mtl: url(objets/pikachu/pikachu-pokemon-go.mtl)" material="color:yellow" scale="0.03 0.03 0.03"></a-entity>
 <a-entity id="bulbasur" position="12 0.1 -14" rotation="0 -135 0" obj-model="obj: url(objets//bulbasur/bulbasaur-pokemon-go.obj); mtl: url(objets//bulbasur/bulbasaur-pokemon-go.mtl)" material="color:yellow" scale="0.15 0.15 0.15"></a-entity>
 <a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
 
 
-<a-entity id="playeronline" position="12 1.8 -14" rotation="0 -45 0" obj-model="obj: url(objets/pikachu/pikachu-pokemon-go.obj); mtl: url(objets/pikachu/pikachu-pokemon-go.mtl)" material="color:yellow" scale="0.03 0.03 0.03"></a-entity>
+<a-entity id="playeronline" position="12 1.8 -14" rotation="0 -45 0" obj-model="obj: url(object2/pikachu/pikachu-pokemon-go.obj); mtl: url(object2/pikachu/pikachu-pokemon-go.mtl)" material="color:yellow" scale="0.03 0.03 0.03"></a-entity>
 
  
 
@@ -162,14 +162,16 @@
           <input id="form" type="checkbox">
         </div>
       </form>
+      <input id="scentrue" type="checkbox">
     </div>
   </main>
 
 
  <script src="main.js"></script>
 <script>
+ var scene = document.querySelector('#scene');
 function tiemsce() {
-  var scene = document.querySelector('#scene');
+  scene = document.querySelector('#scene');
   setTimeout(() => {
     scene.style.display = 'flex';
   }, 500000);
@@ -192,6 +194,15 @@ colorbtn.style.backgroundColor = 'blue';
 
 
 
+
+var scentrue = document.querySelector('#scentrue');
+
+scentrue.addEventListener('change', function () {
+   scene = document.querySelector('#scene');
+   scene.style.display = 'flex';
+   abconline();
+});
+var player = document.querySelector('#player');
 
 
 
