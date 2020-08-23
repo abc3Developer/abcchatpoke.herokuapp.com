@@ -18,5 +18,3 @@ io.on('connection', function(socket) {
     io.emit('message', msg);
   });
 });
-socket.username = 'Anonymous';
-socket.color = color;

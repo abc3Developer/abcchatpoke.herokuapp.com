@@ -1,8 +1,6 @@
 var socket = io();
+
 var form = document.querySelector('form');
-var useer = document.querySelector('#useer');
-
-
 
 form.addEventListener('submit', function(e) {
   e.preventDefault();
@@ -10,12 +8,9 @@ form.addEventListener('submit', function(e) {
   var text = input.value;
   socket.emit('message', text);
   input.value = '';
-  socket.username = useer.value;
-  socket.color = user.value;
 });
 
 socket.on('message', function(text) {
-  
   if (!text) {
     return;
   }
