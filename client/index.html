@@ -55,24 +55,7 @@
        <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
 </head>
 <body onload="saltarr(); saltyf(); supersalt(); tiemsce();">
-   <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
- <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
-<div id="colorbtn">COLOR</div>
- <main>
-    <section>
-      <p></p>
-    </section>
-    <div>
-      <form>
-        <div>
-          <input id="message">
-        </div>
-        <div>
-          <button>Send</button>
-        </div>
-      </form>
-    </div>
-  </main>
+
   <a-scene id="scene" background="" debug="" physics="debug: true" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" auto-enter-vr="">
     <a-sky id="sky" radius="10000" material="src: materials/spaciosss.png;"></a-sky>
 <a-entity id="sol" position="-2500 7000 -4000" rotation="105 30 0" obj-model="obj: url(objets/asteroids2.obj); mtl: url(objets/asteroids2.mtl)" scale="800 800 800">
@@ -161,6 +144,24 @@
 </a-scene>
  
 
+ <main>
+    <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
+ <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
+<div id="colorbtn">COLOR</div>
+    <section>
+      <p></p>
+    </section>
+    <div>
+      <form>
+        <div>
+          <input id="message">
+        </div>
+        <div>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+  </main>
 
 
  <script src="main.js"></script>
@@ -169,7 +170,7 @@ function tiemsce() {
   var scene = document.querySelector('#scene');
   setTimeout(() => {
     scene.style.display = 'flex';
-  }, 5000);
+  }, 500000);
 }
 var colorbtn = document.querySelector('#colorbtn');
 var btnuseer12 = document.querySelector('#btnuseer12');
