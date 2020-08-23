@@ -47,16 +47,11 @@
       .inputy2{
         background-color: transparent !important;
       }
-      #scene{
-        display: none;
-       animation: 120s abc forwards;
-      }
-      @keyframes abc{
-        0%{display:none}
-        100{display:flex}
-      }
+      #btnuseer12{background-color: red}
+      #btnuseer24{background-color: blue}
+      #btnuseer00{}
       </style>
-      <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
+       <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
 </head>
 <body onload="saltarr(); saltyf(); supersalt();">
   <a-scene id="scene" background="" debug="" physics="debug: true" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" auto-enter-vr="">
@@ -145,16 +140,26 @@
 
 <a-entity id="selecuseer2" position="-12 2 7" text-geometry="value:BLUE" width="1" material="color:blue;" selecuseer2-events></a-entity>
 
+<div class="a-enter-vr" aframe-injected="" style="z-index:9999"><button id="btnuseer" class="a-enter-vr-button" aframe-injected="" style="z-index:9999">
+
+
+ 
+
 </a-scene>
+ 
+   <button id="btnuseer12" onclick="event.preventDefault(); btnuser1();">red</button>
+ <button id="btnuseer24" onclick="event.preventDefault(); btnuser2();">blue</button>
+<div id="colorbtn">COLOR</div>
+<br>
+<br>
+<br>
 
 
-
-
-  <main>
+ <main>
     <section>
-      <p>Hey 😊</p>
+      <p></p>
       <br />
-      <p>Hi there!</p>
+      <p></p>
       <br />
     </section>
     <div>
@@ -168,7 +173,22 @@
       </form>
     </div>
   </main>
-  <script src="main.js"></script>
 
+
+ <script src="main.js"></script>
+<script>
+var colorbtn = document.querySelector('#colorbtn');
+var btnuseer12 = document.querySelector('#btnuseer12');
+var btnuseer24 = document.querySelector('#btnuseer24');
+
+function btnuser1() {
+btnuseer12 = document.querySelector('#btnuseer12');
+colorbtn.style.backgroundColor = 'red';
+}
+function btnuser2() {
+btnuseer12 = document.querySelector('#btnuseer12');
+colorbtn.style.backgroundColor = 'blue';
+}
+</script>
 </body>
 </html>
