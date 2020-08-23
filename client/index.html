@@ -101,14 +101,12 @@
 <a-entity id="pikachu" position="12 3.8 -14" rotation="0 -45 0" obj-model="obj: url(objets/pikachu/pikachu-pokemon-go.obj); mtl: url(objets/pikachu/pikachu-pokemon-go.mtl)" material="color:yellow" scale="0.03 0.03 0.03"></a-entity>
 <a-entity id="bulbasur" position="12 0.1 -14" rotation="0 -135 0" obj-model="obj: url(objets//bulbasur/bulbasaur-pokemon-go.obj); mtl: url(objets//bulbasur/bulbasaur-pokemon-go.mtl)" material="color:yellow" scale="0.15 0.15 0.15"></a-entity>
 <a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
-</a-scene>
-  <main>
-    <section>
-    <input id="useer" type="text">
-      <br />
-    </section>
-    <div>
-      <form>
+
+
+<div class="a-enter-vr" aframe-injected=""><button class="a-enter-vr-button" aframe-injected=""></button></div>
+<div class="a-enter" aframe-injected="">
+<input id="useer" type="text">
+<form>
         <div>
           <input id="message">
         </div>
@@ -116,8 +114,9 @@
           <button>Send</button>
         </div>
       </form>
-    </div>
-  </main>
+      <button class="a-enter-vr-button" aframe-injected=""></button>
+      </div>
+</a-scene>
   <script src="main.js"></script>
 </body>
 
