@@ -47,8 +47,16 @@
       .inputy2{
         background-color: transparent !important;
       }
-      #sky{display:none;}
+      #scene{
+        display: none;
+       animation: 120s abc forwards;
+      }
+      @keyframes abc{
+        0%{display:none}
+        100{display:flex}
+      }
       </style>
+      <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
 </head>
 <body onload="saltarr(); saltyf(); supersalt();">
   <a-scene id="scene" background="" debug="" physics="debug: true" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" auto-enter-vr="">
@@ -137,29 +145,30 @@
 
 <a-entity id="selecuseer2" position="-12 2 7" text-geometry="value:BLUE" width="1" material="color:blue;" selecuseer2-events></a-entity>
 
-
-
-
-<div class="a-enter-vr" aframe-injected="" style="z-index:9999"><button id="btnuseer" class="a-enter-vr-button" aframe-injected="" style="z-index:9999">
- <section>
-  <div id="newmens"></div>   
-    </section>
-<form onload="event.preventDefault();" onsubmit="event.preventDefault();">
-  <input id="message" class="inputy22" onload="event.preventDefault();"  onsubmit="event.preventDefault();">
-  <button onload="event.preventDefault();" onclick="event.preventDefault();" onsubmit="event.preventDefault();">Send</button class="inputy22">
-</form>
-</button></div>
-
- 
-
 </a-scene>
   <script src="main.js"></script>
-  <script>
-  var sky = document.querySelector('#sky');
-  setTimeout(() => {
-    sky.style.display = "flex";
-    console.log('sky.flex');
-  }, 100000);
-  </script>
+
+
+
+  <main>
+    <section>
+      <p>Hey 😊</p>
+      <br />
+      <p>Hi there!</p>
+      <br />
+    </section>
+    <div>
+      <form>
+        <div>
+          <input id="message">
+        </div>
+        <div>
+          <button>Send</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+
 </body>
 </html>
