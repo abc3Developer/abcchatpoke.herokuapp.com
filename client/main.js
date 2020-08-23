@@ -50,7 +50,7 @@ player2 = document.querySelector('#player2');
   input.value = '';
 
  }
- }, 500);
+ }, 1000);
 });
  }
 
