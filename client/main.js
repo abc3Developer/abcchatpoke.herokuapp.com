@@ -39,6 +39,7 @@ var abxx = 0;
    });
    
    function btncktrue() {
+    btnck = document.querySelector('#btnck');
      btnck.checked = true;
      if (btnck.checked == true) {
        starrt();
