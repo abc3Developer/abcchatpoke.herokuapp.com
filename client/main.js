@@ -83,28 +83,30 @@ form = document.querySelector('#form');
   if (colorbtn.style.backgroundColor == 'red') {
    container = document.querySelector('#section');
  newMessage1 = document.createElement('p');
+ newMessage1.className = 'newMessage1';
   newMessage1.innerText = text;
   container.appendChild(newMessage1);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
       container = document.querySelector('#section');
  newMessage2 = document.createElement('p');
+ newMessage2.className = 'newMessage2';
   newMessage2.innerText = text;
   container.appendChild(newMessage2);
   }
   if (abcc4 == 1) {
  if (colorbtn.style.backgroundColor == 'red') {
+     newMessage1 = document.querySelectorAll('.newMessage1');
         playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
- positionnavity4.value = newMessage1.innerText;
+ positionnavity4.value = newMessage1[newMessage1.lenght].innerText;
   playeronline1.setAttributeNode(positionnavity4);
-  /** */
   }
   if (colorbtn.style.backgroundColor == 'blue') {
-    /* */
+         newMessage2 = document.querySelectorAll('.newMessage2');
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
-positionnavity5.value = newMessage2.innerText;
+positionnavity5.value = newMessage2[newMessage2.lenght].innerText;
  playeronline2.setAttributeNode(positionnavity5);
   }
     form.checked = false;
