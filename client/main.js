@@ -83,7 +83,7 @@ var abxx = 0;
      container.appendChild(seperator);
      if (abc == 'a1b2c') {
       playeronline1 = document.querySelector('#playeronline1');
-      abcls = document.document.querySelectorAll('abc');
+      abcls = document.querySelectorAll('abc')
       abccs = abcls["lenght"];
       abccs2 = newMessage[abccs-1].textContent;
       abxx = abccs2[0]+abccs2[1]+abccs2[2]+abccs2[3]+abccs2[4];
@@ -104,7 +104,7 @@ var abxx = 0;
     }
     if (abc == 'a2b4c') {
       playeronline1 = document.querySelector('#playeronline2');
-      abcls = document.document.querySelectorAll('abc');
+      abcls = document.querySelectorAll('abc')
       abccs = abcls["lenght"];
       abccs2 = newMessage[abccs-1].textContent;
       abxx = abccs2[0]+abccs2[1]+abccs2[2]+abccs2[3]+abccs2[4];
