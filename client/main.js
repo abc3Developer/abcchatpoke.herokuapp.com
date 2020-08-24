@@ -96,7 +96,7 @@ form = document.querySelector('#form');
   container.appendChild(newMessage2);
   }
   if (abcc4 == 1) {
-    
+
      newMessage1 = document.querySelectorAll('.newMessage1');
         playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
@@ -109,7 +109,7 @@ asa = asa-1;
          newMessage2 = document.querySelectorAll('.newMessage2');
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
-  asa = newMessage1["length"];
+  asa = newMessage2["length"];
 asa = asa-1;
 positionnavity5.value = newMessage2[asa].textContent;
  playeronline2.setAttributeNode(positionnavity5);
