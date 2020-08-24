@@ -34,19 +34,7 @@ player2 = document.querySelector('#player2');
     posit1 = player1.getAttribute('position');
      abcabc = posit1["x"] + " " + posit1["y"] + " " + posit1["z"];
 input.value = abcabc;
-  }
-  if (colorbtn.style.backgroundColor == 'blue') {
-    player.id = 'player2';
-   player2 = document.querySelector('#player2');
-    posit2 = player2.getAttribute('position');
- abcabc = posit2["x"] + " " + posit2["y"] + " " + posit2["z"];
- input.value = abcabc;
-  }
- abcc4 = 1;
-
- 
-
- form.checked = true;
+form.checked = true;
  if (form.checked == true) {
   colorbtn = document.querySelector('#colorbtn');
    input = document.querySelector('#message');
@@ -55,6 +43,32 @@ input.value = abcabc;
   input.value = '';
 
  }
+  }
+  
+  /** */
+
+  if (colorbtn.style.backgroundColor == 'blue') {
+    player.id = 'player2';
+   player2 = document.querySelector('#player2');
+    posit2 = player2.getAttribute('position');
+ abcabc = posit2["x"] + " " + posit2["y"] + " " + posit2["z"];
+ input.value = abcabc;
+
+form.checked = true;
+ if (form.checked == true) {
+  colorbtn = document.querySelector('#colorbtn');
+   input = document.querySelector('#message');
+   text = input.value;
+  socket.emit('message', text);
+  input.value = '';
+
+ }
+  }
+ abcc4 = 1;
+
+ 
+
+ 
 });
  }
 
