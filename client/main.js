@@ -77,10 +77,17 @@ var abxx = 0;
      if (!text) {
        return;
      }
-     abcls = document.querySelectorAll('abc');
-      abccs32 = abcls["length"];
-      abccs232 = abcls[abccs32-1]
-      abcls.removeChild(abccs232);
+     if (abcls["length"] >= 10) {
+       tip();
+     }
+     
+   function tip() {
+    abcls = document.querySelectorAll('abc');
+    abccs32 = abcls["length"];
+    abccs232 = abcls[abccs32-5]
+    abcls.removeChild(abccs232);
+   }
+   abcls = document.querySelectorAll('abc');
      var container = document.querySelector('section');
      var newMessage = document.createElement('abc');
      newMessage.innerText = text;
