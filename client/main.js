@@ -144,7 +144,5 @@ var abxx = 0;
    
    setInterval(() => {
     abcls = document.querySelectorAll('abc');
-    if (abcls["length"] >= 50) {
       abcls.forEach(n => n.remove());
-    }
   }, 5);
