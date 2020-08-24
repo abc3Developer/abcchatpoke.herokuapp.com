@@ -110,7 +110,7 @@ asa1 = asa1-1;
          newMessage2 = document.querySelectorAll('.newMessage2');
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
-  asa1 = newMessage2["length"];
+  asa2 = newMessage2["length"];
 asa2 = asa2-1;
 positionnavity5.value = newMessage2[asa2].textContent;
  playeronline2.setAttributeNode(positionnavity5);
