@@ -79,7 +79,7 @@ var abxx = 0;
      }
      abcls = document.querySelectorAll('abc');
       abccs32 = abcls["length"];
-      abccs232 = abcls[abccs32-2]
+      abccs232 = abcls[abccs32-1]
       abcls.removeChild(abccs232);
      var container = document.querySelector('section');
      var newMessage = document.createElement('abc');
