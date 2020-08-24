@@ -29,6 +29,7 @@ var abxx = 0;
        btncolor.style.backgroundColor = 'red';
    }
    function ab24() {
+    btncolor = document.querySelector('#btncolor');
      abc = 'abc24';
      btncolor.style.backgroundColor = 'blue';
    }
