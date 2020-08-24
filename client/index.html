@@ -33,7 +33,7 @@
       </style>
        <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
 </head>
-<body onload="saltarr(); saltyf(); supersalt(); tiemsce();">
+<body onload="saltarr(); saltyf(); supersalt();">
 
   <a-scene id="scene" background="" debug="" physics="debug: true" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" auto-enter-vr="">
     <a-sky id="sky" radius="10000" material="src: materials/spaciosss.png;"></a-sky>
@@ -42,7 +42,7 @@
 <a-light type="ambient" intensity="1.2" position="0 0 0"></a-light>  
 </a-entity>
 
-<a-entity id="player" class="player1" position="-10 4 13" rotation="0 0 0" sound="src:#bg_music; autoplay:true; loop:true; volume:0.05" camera="" player="health: 200" userheight="3" universal-controls="" kinematic-body="" velocity="1000 1000 1000" gamepad-controls="" keyboard-controls="" touch-controls="" hmd-controls="" mouse-controls="">
+<a-entity id="player" position="-10 4 13" rotation="0 0 0" sound="src:#bg_music; autoplay:true; loop:true; volume:0.05" camera="" player="health: 200" userheight="3" universal-controls="" kinematic-body="" velocity="1000 1000 1000" gamepad-controls="" keyboard-controls="" touch-controls="" hmd-controls="" mouse-controls="">
 <a-entity sound="src:#bg_music"></a-entity>
         <a-cursor position="0 -0.8 0" rotation="-90 0 0" scale="2 2 2" material="color:red;opacity:0"></a-cursor>
 <a-cursor position="0 0 0" rotation="0 0 0" scale="2 2 2" material="color:black;opacity:1"></a-cursor>
@@ -146,7 +146,7 @@
 <script>
    var scenetrue = document.querySelector('#scenetrue');
  var scene = document.querySelector('#scene');
- 
+
 scenetrue.addEventListener('change', function () {
   scene = document.querySelector('#scene');
     scene.style.display = 'flex';
