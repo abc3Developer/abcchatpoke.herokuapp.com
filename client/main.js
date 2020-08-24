@@ -37,7 +37,7 @@ var abxx = 0;
 
    setInterval(() => {
     btncktrue();
-   }, 100);
+   }, 200);
    /**
     document.addEventListener('keypress', function () {
      btncktrue();
