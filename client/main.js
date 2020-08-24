@@ -14,6 +14,9 @@ var player2 = document.querySelector('#player2');
   var playeronline1 = document.querySelector('#playeronline1');
    var playeronline2 = document.querySelector('#playeronline2');
 var input = document.querySelector('#message');
+  var newMessage1 = document.querySelectorAll('.newMessage1');
+  
+  var newMessage2 = document.querySelectorAll('.newMessage2');
 var text = 0;
 var abcabc1 = 0;
 var abcabc2 = 0;
@@ -102,7 +105,9 @@ form = document.querySelector('#form');
         playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
   asa1 = newMessage1["length"];
-asa1 = asa1-1;
+    if (asa1 >= 2) {
+asa1 = asa1-1; 
+  }
  positionnavity4.value = newMessage1[asa1].textContent;
   playeronline1.setAttributeNode(positionnavity4);
 
@@ -111,7 +116,9 @@ asa1 = asa1-1;
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
   asa2 = newMessage2["length"];
-asa2 = asa2-1;
+  if (asa2 >= 2) {
+asa2 = asa2-1; 
+  }
 positionnavity5.value = newMessage2[asa2].textContent;
  playeronline2.setAttributeNode(positionnavity5);
   
