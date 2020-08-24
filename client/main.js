@@ -1,7 +1,7 @@
 var player = document.querySelector('#player');
   var playeronline1 = document.querySelector('#playeronline1');
   var playeronline2 = document.querySelector('#playeronline2');
-
+var abcls = document.document.querySelectorAll('abc');
 
 
 
@@ -16,6 +16,13 @@ var player = document.querySelector('#player');
 
    var posit = 0;
    var posit2 = 0;
+
+
+  var abccs = 0;
+  var abccs2 = 0;
+  var abccs3 = 0;
+var abxx = 0;
+
    function ab12() {
      btncolor = document.querySelector('#btncolor');
      abc = 'abc12';
@@ -74,19 +81,43 @@ var player = document.querySelector('#player');
      container.appendChild(seperator);
      if (abc == 'a1b2c') {
       playeronline1 = document.querySelector('#playeronline1');
-      let rem1 = text.replace('a2b4c', '');
-      let rem2 = rem1.replace('---', '');
+      abccs = abcls["lenght"];
+      abccs2 = newMessage[abccs-1].textContent;
+      abxx = abccs2[0]+abccs2[1]+abccs2[2]+abccs2[3]+abccs2[4];
+      if (abxx == 'a1b2c') {
+        console.log('bien1')
+      }else{
+        if (abxx == 'a2b4c') {
+          console.log('bien2');
+          abccs3 = abccs2.replace('a2b4c---', '');
+          positc1();
+        }
+      }
+    function positc1() {
       let positionnavity3 = document.createAttribute('position');
-      positionnavity3.value = rem2;
+      positionnavity3.value = abccs3;
       playeronline1.setAttributeNode(positionnavity3);
     }
+    }
     if (abc == 'a2b4c') {
-      playeronline2 = document.querySelector('#playeronline2');
-      let rem1 = text.replace('a1b2c', '');
-      let rem2 = rem1.replace('---', '');
-      let positionnavity3 = document.createAttribute('position');
-      positionnavity3.value = rem2;
-      playeronline2.setAttributeNode(positionnavity3);
+      playeronline1 = document.querySelector('#playeronline2');
+      abccs = abcls["lenght"];
+      abccs2 = newMessage[abccs-1].textContent;
+      abxx = abccs2[0]+abccs2[1]+abccs2[2]+abccs2[3]+abccs2[4];
+      if (abxx == 'a1b2c') {
+        console.log('bien11');
+        abccs3 = abccs2.replace('a1b2c---', '');
+        positc2();
+      }else{
+        if (abxx == 'a2b4c') {
+          console.log('bien22');
+        }
+      }
+      function positc2() {
+        let positionnavity3 = document.createAttribute('position');
+        positionnavity3.value = abccs3;
+        playeronline2.setAttributeNode(positionnavity3);
+      }
     }
      
      });
