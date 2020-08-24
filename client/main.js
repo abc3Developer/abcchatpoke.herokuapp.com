@@ -134,7 +134,7 @@ var abxx = 0;
         playeronline2.setAttributeNode(positionnavity3);
         abclsss = document.querySelector('#abclsss');
         abclsss.innerText = abcls["length"];
-        if (abcls["length"] >= 10) {
+        if (abcls["length"] >= 200) {
           tip();
         }
       }
@@ -146,7 +146,7 @@ var abxx = 0;
    function tip() {
     abcls = document.querySelectorAll('abc');
     abccs32 = abcls["length"];
-    abccs232 = abcls[abccs32-5]
+    abccs232 = abcls[abccs32-150]
     abcls.removeChild(abccs232);
    }
 
