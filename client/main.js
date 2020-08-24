@@ -81,7 +81,9 @@ form.checked = true;
 
 socket.on('message', function(text) {
   if (!text) {
+      if (colorbtn.style.backgroundColor == 'blue') {
     return;
+      }
   }
 form = document.querySelector('#form');
 
