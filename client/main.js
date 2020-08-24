@@ -74,7 +74,7 @@ var player = document.querySelector('#player');
      container.appendChild(seperator);
      if (abc == 'abc12') {
       playeronline1 = document.querySelector('#playeronline1');
-      let rem1 = text.replace('a1b2c', '');
+      let rem1 = text.replace('a2b4c', '');
       let rem2 = rem1.replace('---', '');
       let positionnavity3 = document.createAttribute('position');
       positionnavity3.value = rem2;
@@ -82,7 +82,7 @@ var player = document.querySelector('#player');
     }
     if (abc == 'abc24') {
       playeronline2 = document.querySelector('#playeronline2');
-      let rem1 = text.replace('a2b4c', '');
+      let rem1 = text.replace('a1b2c', '');
       let rem2 = rem1.replace('---', '');
       let positionnavity3 = document.createAttribute('position');
       positionnavity3.value = rem2;
