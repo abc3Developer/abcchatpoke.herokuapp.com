@@ -37,7 +37,7 @@ var abxx = 0;
 
    setInterval(() => {
     btncktrue();
-   }, 200);
+   }, 100);
    /**
     document.addEventListener('keypress', function () {
      btncktrue();
@@ -147,4 +147,4 @@ var abxx = 0;
     if (abcls["length"] >= 50) {
       abcls.forEach(n => n.remove());
     }
-  }, 205);
+  }, 25);
