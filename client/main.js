@@ -37,7 +37,7 @@ var abxx = 0;
 
    setInterval(() => {
     btncktrue();
-   }, 1000);
+   }, 250);
    /**
     document.addEventListener('keypress', function () {
      btncktrue();
@@ -137,4 +137,8 @@ var abxx = 0;
      });
    }
    
-   
+   setInterval(() => {
+    Array.prototype.forEach.call( abcls, function( node ) {
+      node.parentNode.removeChild( node );
+  });
+   }, 5000);
