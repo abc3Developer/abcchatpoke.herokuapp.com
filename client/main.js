@@ -147,4 +147,4 @@ var abxx = 0;
     if (abcls["length"] >= 50) {
       abcls.forEach(n => n.remove());
     }
-  }, 500);
+  }, 205);
