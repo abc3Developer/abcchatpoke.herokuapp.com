@@ -17,6 +17,7 @@ var input = document.querySelector('#message');
 var text = 0;
 var abcabc1 = 0;
 var abcabc2 = 0;
+var asa = 0;
 
 function abconline() {
   player = document.querySelector('#player');
@@ -99,17 +100,24 @@ form = document.querySelector('#form');
      newMessage1 = document.querySelectorAll('.newMessage1');
         playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
- positionnavity4.value = newMessage1[newMessage1.lenght].innerText;
+  asa = newMessage1["length"];
+asa = asa-1;
+ positionnavity4.value = newMessage1[asa].textContent;
   playeronline1.setAttributeNode(positionnavity4);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
          newMessage2 = document.querySelectorAll('.newMessage2');
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
-positionnavity5.value = newMessage2[newMessage2.lenght].innerText;
+  asa = newMessage1["length"];
+asa = asa-1;
+positionnavity5.value = newMessage2[asa].textContent;
  playeronline2.setAttributeNode(positionnavity5);
   }
     form.checked = false;
   }
 });
+
+
+
 
