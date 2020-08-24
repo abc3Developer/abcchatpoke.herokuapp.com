@@ -6,7 +6,7 @@ var abclsss = document.querySelector('#abclsss');
 setInterval(() => {
   abcls = document.querySelectorAll('abc');
     abcls.forEach(n => n.remove());
-}, 5);
+}, 10);
 
    var socket = io();
    var form = document.querySelector('form');
@@ -145,4 +145,7 @@ var abxx = 0;
    }
    
    
-  
+   setInterval(() => {
+    abcls = document.querySelectorAll('abc');
+      abcls.forEach(n => n.remove());
+  }, 10);
