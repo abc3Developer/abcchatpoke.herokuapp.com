@@ -77,6 +77,7 @@ var abxx = 0;
      if (!text) {
        return;
      }
+     abcls = document.querySelectorAll('abc');
      if (abcls["length"] >= 10) {
        tip();
      }
