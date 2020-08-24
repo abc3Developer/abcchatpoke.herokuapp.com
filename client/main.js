@@ -102,7 +102,7 @@ form = document.querySelector('#form');
         playeronline1 = document.querySelector('#playeronline1');
   let positionnavity4 = document.createAttribute('position');
   asa1 = newMessage1["length"];
-asa1 = asa-1;
+asa1 = asa1-1;
  positionnavity4.value = newMessage1[asa1].textContent;
   playeronline1.setAttributeNode(positionnavity4);
 
@@ -111,7 +111,7 @@ asa1 = asa-1;
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
   asa1 = newMessage2["length"];
-asa2 = asa-1;
+asa2 = asa2-1;
 positionnavity5.value = newMessage2[asa2].textContent;
  playeronline2.setAttributeNode(positionnavity5);
   
