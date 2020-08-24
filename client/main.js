@@ -83,8 +83,8 @@ var abxx = 0;
      container.appendChild(seperator);
      if (abc == 'a1b2c') {
       playeronline1 = document.querySelector('#playeronline1');
-      abcls = document.querySelectorAll('abc')
-      abccs = abcls["lenght"];
+      abcls = document.querySelectorAll('abc');
+      abccs = abcls["length"];
       abccs2 = abcls[abccs-1].textContent;
       let aka0 = abccs2[0];
       let aka1 = abccs2[1];
@@ -109,8 +109,8 @@ var abxx = 0;
     }
     if (abc == 'a2b4c') {
       playeronline1 = document.querySelector('#playeronline2');
-      abcls = document.querySelectorAll('abc')
-      abccs = abcls["lenght"];
+      abcls = document.querySelectorAll('abc');
+      abccs = abcls["length"];
       abccs2 = abcls[abccs-1].textContent;
       let aka0 = abccs2[0];
       let aka1 = abccs2[1];
