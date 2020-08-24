@@ -3,8 +3,8 @@ var player = document.querySelector('#player');
   var playeronline2 = document.querySelector('#playeronline2');
 var abcls = 0;
 var abclsss = document.querySelector('#abclsss');
-
-
+var abccs32 = 0;
+var abccs232 = 0;
    var socket = io();
    var form = document.querySelector('form');
    var asa = 0;
@@ -77,14 +77,14 @@ var abxx = 0;
      if (!text) {
        return;
      }
-   
+     abcls = document.querySelectorAll('abc');
+      abccs32 = abcls["length"];
+      abccs232 = abcls[abccs32-2]
+      abcls.removeChild(abccs232);
      var container = document.querySelector('section');
      var newMessage = document.createElement('abc');
      newMessage.innerText = text;
      container.appendChild(newMessage);
-   
-     var seperator = document.createElement('br');
-     container.appendChild(seperator);
      if (abc == 'a1b2c') {
       playeronline1 = document.querySelector('#playeronline1');
       abcls = document.querySelectorAll('abc');
@@ -141,8 +141,9 @@ var abxx = 0;
      });
    }
    
-   
+   /*
    setInterval(() => {
     abcls = document.querySelectorAll('abc');
       abcls.forEach(n => n.remove());
   }, 10000);
+  */
