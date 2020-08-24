@@ -15,10 +15,6 @@
   <script src="js/playerabc.js"></script>
   <script src="js/saltar.js"></script>
   <script src="js/supersalto.js"></script>
-  <script src="js/patin.js"></script>
-  <script src="js/aframe-text-geometry-component.min.js"></script>
-      <script src="indexpoke.js"></script>
-      <script src="js/ascensorpok.js"></script>
       <style>
       #scene{display:none}
       #btncolor{
@@ -36,8 +32,75 @@
       background-color: red;
       opacity: 0.4;
     }
+    body {
+  font-family: 'Helvetica Neue';
+  font-size: 20px;
+  font-weight: normal;
+}
+
+main {
+  width: 40rem;
+  margin: auto;
+  margin-top: 0.2rem;
+  max-height: 5vw !important;
+}
+
+section {
+  height: 50px;
+  overflow: scroll;
+  padding: 25px 25px 0 25px;
+}
+
+section br {
+  clear: both;
+}
+
+.message {
+  max-width: 250px;
+  word-wrap: break-word;
+  margin-bottom: 12px;
+  line-height: 24px;
+}
+section p:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  margin: auto;
+}
+
+form div:first-child {
+  flex: 1;
+  padding: 5px;
+  margin: 5px;
+}
+
+form div:nth-child(2) {
+  display: flex;
+  margin: 5px;
+}
+
+button {
+  border: none;
+  color: #0a93f6;
+  background-color: transparent;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  border: solid 1px #e5e5eb;
+  border-radius: 10px;
+  padding: 5px;
+}
       </style>
-       <link rel="stylesheet" type="text/css" media="screen" href="ios.css" />
 </head>
 <body onload="saltarr(); saltyf(); supersalt();">
   <main>
@@ -54,55 +117,27 @@
         </div>
       </form>
     </div>
-    
 <button style="background-color: red;" onclick="ab12();">red</button>
 <button style="background-color: blue;" onclick="ab24();">blue</button>
 <p id="btncolor">color</p>
 <input type="checkbox" name="" id="scenetrue">
   </main>
   <a-scene id="scene" background="" debug="" physics="debug: true" class="fullscreen" canvas="" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" auto-enter-vr="">
-    <!--
-      <a-sky id="sky" radius="10000" material="src: materials/spaciosss.png;"></a-sky>
- <a-entity id="sol" position="-2500 7000 -4000" rotation="105 30 0" obj-model="obj: url(objets/asteroids2.obj); mtl: url(objets/asteroids2.mtl)" scale="800 800 800">
-
-    -->
    <a-light type="point" angle="60" intensity="0.3" position="0 -10000 0"></a-light>  
 <a-light type="ambient" intensity="1.2" position="0 0 0"></a-light>  
-<!--
-  </a-entity>
--->
-
 <a-entity id="player" position="-10 4 13" rotation="0 0 0" sound="src:#bg_music; autoplay:true; loop:true; volume:0.05" camera="" player="health: 200" userheight="3" universal-controls="" kinematic-body="" velocity="1000 1000 1000" gamepad-controls="" keyboard-controls="" touch-controls="" hmd-controls="" mouse-controls="">
 <a-entity sound="src:#bg_music"></a-entity>
         <a-cursor position="0 -0.8 0" rotation="-90 0 0" scale="2 2 2" material="color:red;opacity:0"></a-cursor>
 <a-cursor position="0 0 0" rotation="0 0 0" scale="2 2 2" material="color:black;opacity:1"></a-cursor>
 </a-entity>
-<!-- avatar -->
-         <!-- suelo princpal -->
 <a-box id="abc1" position="0 -0.2 0" rotation="0 0 0" width="10000" height="0.5" depth="1000" color="rgba(149, 149, 149, 0.808)" static-body>
 </a-box>
 <a-box id="abc2" position="0 -6.2 0" rotation="0 0 0" width="10000" height="0.5" depth="1000" color="rgba(149, 149, 149, 0.808)" static-body>
 </a-box>
 <a-box id="sueloprincipal" position="0 0.11 0" rotation="0 0 0" material="src: materials/imagenmadera.jpg;repeat:50 50;color:rgba(214, 120, 43, 0.781);" depth="200" width="300" height="0.05" static-body></a-box>
-
-
 <a-box id="playeronline1" position="-14 1.5 3" rotation="0 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="1" width="1" height="3" ></a-box>
 <a-box id="playeronline2" position="-10 1.5 3" rotation="0 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="1" width="1" height="3" ></a-box>
-
- 
 </a-scene>
-
  <script src="main.js"></script>
- 
- 
-<script>
-   var scenetrue = document.querySelector('#scenetrue');
- var scene = document.querySelector('#scene');
-
-scenetrue.addEventListener('change', function () {
-  scene = document.querySelector('#scene');
-    scene.style.display = 'flex';
-});
-</script>
 </body>
 </html>
