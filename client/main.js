@@ -107,6 +107,8 @@ var abxx = 0;
       let positionnavity3 = document.createAttribute('position');
       positionnavity3.value = abccs3;
       playeronline1.setAttributeNode(positionnavity3);
+      abclsss = document.querySelector('#abclsss');
+      abclsss.innerText = abcls["length"];
     }
     }
     if (abc == 'a2b4c') {
@@ -131,6 +133,8 @@ var abxx = 0;
         let positionnavity3 = document.createAttribute('position');
         positionnavity3.value = abccs3;
         playeronline2.setAttributeNode(positionnavity3);
+        abclsss = document.querySelector('#abclsss');
+        abclsss.innerText = abcls["length"];
       }
     }
      
