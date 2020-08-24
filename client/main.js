@@ -72,7 +72,7 @@ var player = document.querySelector('#player');
    
      var seperator = document.createElement('br');
      container.appendChild(seperator);
-     if (abc == 'abc12') {
+     if (abc == 'a1b2c') {
       playeronline1 = document.querySelector('#playeronline1');
       let rem1 = text.replace('a2b4c', '');
       let rem2 = rem1.replace('---', '');
@@ -80,7 +80,7 @@ var player = document.querySelector('#player');
       positionnavity3.value = rem2;
       playeronline1.setAttributeNode(positionnavity3);
     }
-    if (abc == 'abc24') {
+    if (abc == 'a2b4c') {
       playeronline2 = document.querySelector('#playeronline2');
       let rem1 = text.replace('a1b2c', '');
       let rem2 = rem1.replace('---', '');
