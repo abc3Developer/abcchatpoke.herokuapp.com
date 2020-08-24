@@ -60,11 +60,9 @@ var abxx = 0;
      input = document.querySelector('#message');
      text = input.value;
      if (abc == 'abc12') {
-       console.log(12)
        abc = 'a1b2c';
      }
      if (abc == 'abc24') {
-       console.log(24)
        abc = 'a2b4c';
      }
      text = abc+ "---" +text;
@@ -99,10 +97,8 @@ var abxx = 0;
       let aka4 = abccs2[4];
       let akats = aka0+aka1+aka2+aka3+aka4;
       if (akats == 'a1b2c') {
-        console.log('bien1')
       }else{
         if (akats == 'a2b4c') {
-          console.log('bien2');
           abccs3 = abccs2.replace('a2b4c---', '');
           positc1();
         }
@@ -125,12 +121,10 @@ var abxx = 0;
       let aka4 = abccs2[4];
       let akats = aka0+aka1+aka2+aka3+aka4;
         if (akats == 'a1b2c') {
-        console.log('bien11');
         abccs3 = abccs2.replace('a1b2c---', '');
         positc2();
       }else{
         if (akats == 'a2b4c') {
-          console.log('bien22');
         }
       }
       function positc2() {
