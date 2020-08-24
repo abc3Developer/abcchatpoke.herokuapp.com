@@ -33,7 +33,12 @@ var abxx = 0;
      abc = 'abc24';
      btncolor.style.backgroundColor = 'blue';
    }
-   
+   function tip() {
+    abcls = document.querySelectorAll('abc');
+    abccs32 = abcls["length"];
+    abccs232 = abcls[abccs32-5]
+    abcls.removeChild(abccs232);
+   }
 
    setInterval(() => {
     btncktrue();
@@ -57,6 +62,9 @@ var abxx = 0;
    }
    
    function starrt() {
+    if (abcls["length"] >= 10) {
+      tip();
+    }
      input = document.querySelector('#message');
      text = input.value;
      if (abc == 'abc12') {
@@ -78,16 +86,9 @@ var abxx = 0;
        return;
      }
      abcls = document.querySelectorAll('abc');
-     if (abcls["length"] >= 10) {
-       tip();
-     }
+  
      
-   function tip() {
-    abcls = document.querySelectorAll('abc');
-    abccs32 = abcls["length"];
-    abccs232 = abcls[abccs32-5]
-    abcls.removeChild(abccs232);
-   }
+ 
    abcls = document.querySelectorAll('abc');
      var container = document.querySelector('section');
      var newMessage = document.createElement('abc');
