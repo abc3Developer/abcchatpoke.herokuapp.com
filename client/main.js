@@ -137,10 +137,10 @@ var abxx = 0;
      });
    }
    
+   
    setInterval(() => {
-    abclsss = document.querySelector('#abclsss');
-    abclsss.innerText = abcls["length"];
-    Array.prototype.forEach.call( abcls, function( node ) {
-      node.parentNode.removeChild( node );
-  });
-   }, 500);
+    abcls = document.querySelectorAll('abc');
+    if (abcls["length"] >= 50) {
+      abcls.forEach(n => n.remove());
+    }
+  }, 2000);
