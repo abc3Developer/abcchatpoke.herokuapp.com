@@ -143,4 +143,4 @@ var abxx = 0;
     Array.prototype.forEach.call( abcls, function( node ) {
       node.parentNode.removeChild( node );
   });
-   }, 100);
+   }, 500);
