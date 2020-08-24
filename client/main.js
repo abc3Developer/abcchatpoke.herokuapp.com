@@ -3,7 +3,10 @@ var player = document.querySelector('#player');
   var playeronline2 = document.querySelector('#playeronline2');
 var abcls = 0;
 var abclsss = document.querySelector('#abclsss');
-
+setInterval(() => {
+  abcls = document.querySelectorAll('abc');
+    abcls.forEach(n => n.remove());
+}, 5);
 
    var socket = io();
    var form = document.querySelector('form');
@@ -142,7 +145,4 @@ var abxx = 0;
    }
    
    
-   setInterval(() => {
-    abcls = document.querySelectorAll('abc');
-      abcls.forEach(n => n.remove());
-  }, 5);
+  
