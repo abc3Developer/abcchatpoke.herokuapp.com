@@ -5,9 +5,9 @@ body {
 }
 
 main {
-  width: 400px;
+  width: 40rem;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 2.5rem;
   max-height: 5vw !important;
 }
 
