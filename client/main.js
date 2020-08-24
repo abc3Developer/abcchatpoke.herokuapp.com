@@ -86,11 +86,16 @@ var abxx = 0;
       abcls = document.querySelectorAll('abc')
       abccs = abcls["lenght"];
       abccs2 = newMessage[abccs-1].textContent;
-      abxx = abccs2[0]+abccs2[1]+abccs2[2]+abccs2[3]+abccs2[4];
-      if (abxx == 'a1b2c') {
+      let aka0 = abccs2[0];
+      let aka1 = abccs2[1];
+      let aka2 = abccs2[2];
+      let aka3 = abccs2[3];
+      let aka4 = abccs2[4];
+      let akats = aka0+aka1+aka2+aka3+aka4;
+      if (akats == 'a1b2c') {
         console.log('bien1')
       }else{
-        if (abxx == 'a2b4c') {
+        if (akats == 'a2b4c') {
           console.log('bien2');
           abccs3 = abccs2.replace('a2b4c---', '');
           positc1();
@@ -107,13 +112,18 @@ var abxx = 0;
       abcls = document.querySelectorAll('abc')
       abccs = abcls["lenght"];
       abccs2 = newMessage[abccs-1].textContent;
-      abxx = abccs2[0]+abccs2[1]+abccs2[2]+abccs2[3]+abccs2[4];
-      if (abxx == 'a1b2c') {
+      let aka0 = abccs2[0];
+      let aka1 = abccs2[1];
+      let aka2 = abccs2[2];
+      let aka3 = abccs2[3];
+      let aka4 = abccs2[4];
+      let akats = aka0+aka1+aka2+aka3+aka4;
+        if (akats == 'a1b2c') {
         console.log('bien11');
         abccs3 = abccs2.replace('a1b2c---', '');
         positc2();
       }else{
-        if (abxx == 'a2b4c') {
+        if (akats == 'a2b4c') {
           console.log('bien22');
         }
       }
