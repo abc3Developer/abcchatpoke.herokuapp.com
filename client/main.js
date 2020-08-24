@@ -2,7 +2,7 @@ var player = document.querySelector('#player');
   var playeronline1 = document.querySelector('#playeronline1');
   var playeronline2 = document.querySelector('#playeronline2');
 var abcls = 0;
-
+var abclsss = document.querySelector('#abclsss');
 
 
    var socket = io();
@@ -138,6 +138,8 @@ var abxx = 0;
    }
    
    setInterval(() => {
+    abclsss = document.querySelector('#abclsss');
+    abclsss.innerText = abcls["length"];
     Array.prototype.forEach.call( abcls, function( node ) {
       node.parentNode.removeChild( node );
   });
