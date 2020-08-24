@@ -1,6 +1,6 @@
 var player = document.querySelector('#player');
   var playeronline1 = document.querySelector('#playeronline1');
-   var playeronline2 = document.querySelector('#playeronline2');
+  var playeronline2 = document.querySelector('#playeronline2');
 
 
 
@@ -52,7 +52,7 @@ var player = document.querySelector('#player');
        console.log(24)
        abc = 'a2b4c';
      }
-     text = text+ "---" +abc;
+     text = abc+ "---" +text;
      socket.emit('message', text, function () {
        socket.emit('txtabc');
      });
@@ -72,6 +72,23 @@ var player = document.querySelector('#player');
    
      var seperator = document.createElement('br');
      container.appendChild(seperator);
+     if (abc == 'abc12') {
+      playeronline1 = document.querySelector('#playeronline1');
+      let rem1 = text.replace('a1b2c', '');
+      let rem2 = rem1.replace('---', '');
+      let positionnavity3 = document.createAttribute('position');
+      positionnavity3.value = rem2;
+      playeronline1.setAttributeNode(positionnavity3);
+    }
+    if (abc == 'abc24') {
+      playeronline2 = document.querySelector('#playeronline2');
+      let rem1 = text.replace('a2b4c', '');
+      let rem2 = rem1.replace('---', '');
+      let positionnavity3 = document.createAttribute('position');
+      positionnavity3.value = rem2;
+      playeronline2.setAttributeNode(positionnavity3);
+    }
+     
      });
    }
    
