@@ -3,8 +3,7 @@ var player = document.querySelector('#player');
   var playeronline2 = document.querySelector('#playeronline2');
 var abcls = 0;
 var abclsss = document.querySelector('#abclsss');
-var abccs32 = 0;
-var abccs232 = 0;
+
    var socket = io();
    var form = document.querySelector('form');
    var asa = 0;
@@ -134,21 +133,14 @@ var abxx = 0;
         playeronline2.setAttributeNode(positionnavity3);
         abclsss = document.querySelector('#abclsss');
         abclsss.innerText = abcls["length"];
-        if (abcls["length"] >= 200) {
-          tip();
-        }
+        
       }
     }
      
      });
    }
    
-   function tip() {
-    abcls = document.querySelectorAll('abc');
-    abccs32 = abcls["length"];
-    abccs232 = abcls[abccs32-150]
-    abcls.removeChild(abccs232);
-   }
+
 
    /*
    setInterval(() => {

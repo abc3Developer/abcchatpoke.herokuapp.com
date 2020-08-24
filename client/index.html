@@ -93,6 +93,39 @@
 </a-scene>
 
  <script src="main.js"></script>
+ <script>
+
+var abccs32 = 0;
+var abccs232 = 0;
+
+      function tip() {
+    abcls = document.querySelectorAll('abc');
+    abccs32 = abcls["length"];
+    abccs232 = abcls[abccs32-90];
+    abcls.removeChild(abccs232);
+    abccs232 = abcls[abccs32-91];
+    abcls.removeChild(abccs232);
+    abccs232 = abcls[abccs32-92];
+    abcls.removeChild(abccs232);
+    abccs232 = abcls[abccs32-93];
+    abcls.removeChild(abccs232);
+    abccs232 = abcls[abccs32-94];
+    abcls.removeChild(abccs232);
+    abccs232 = abcls[abccs32-95];
+    abcls.removeChild(abccs232);
+    abccs232 = abcls[abccs32-96];
+    abcls.removeChild(abccs232);
+   }
+
+
+   setTimeout(() => {
+  setInterval(() => {
+    if (abcls["length"] >= 100) {
+          tip();
+        }
+   }, 5);
+}, 10000);
+ </script>
  
 <script>
    var scenetrue = document.querySelector('#scenetrue');
