@@ -44,7 +44,7 @@ form.checked = true;
 
  }
   }
-  
+
   /** */
 
   if (colorbtn.style.backgroundColor == 'blue') {
@@ -99,16 +99,8 @@ form = document.querySelector('#form');
  positionnavity4.value = newMessage1.innerText;
   playeronline1.setAttributeNode(positionnavity4);
   /** */
-     playeronline2 = document.querySelector('#playeronline2');
-  let positionnavity5 = document.createAttribute('position');
-positionnavity5.value = newMessage2.innerText;
- playeronline2.setAttributeNode(positionnavity5);
   }
   if (colorbtn.style.backgroundColor == 'blue') {
-     playeronline1 = document.querySelector('#playeronline1');
-  let positionnavity4 = document.createAttribute('position');
- positionnavity4.value = newMessage1.innerText;
-  playeronline1.setAttributeNode(positionnavity4);
     /* */
        playeronline2 = document.querySelector('#playeronline2');
   let positionnavity5 = document.createAttribute('position');
