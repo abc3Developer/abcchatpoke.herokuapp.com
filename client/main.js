@@ -34,9 +34,15 @@ var abxx = 0;
      btncolor.style.backgroundColor = 'blue';
    }
    
-   document.addEventListener('keypress', function () {
+
+   setInterval(() => {
+    btncktrue();
+   }, 1000);
+   /**
+    document.addEventListener('keypress', function () {
      btncktrue();
    });
+    */
    
    function btncktrue() {
     btnck = document.querySelector('#btnck');
