@@ -136,6 +136,67 @@ input {
 <a-box id="sueloprincipal" position="0 0.11 0" rotation="0 0 0" material="src: materials/imagenmadera.jpg;repeat:50 50;color:rgba(214, 120, 43, 0.781);" depth="200" width="300" height="0.05" static-body></a-box>
 <a-box id="playeronline1" position="-14 1.5 3" rotation="0 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="1" width="1" height="3" ></a-box>
 <a-box id="playeronline2" position="-10 1.5 3" rotation="0 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="1" width="1" height="3" ></a-box>
+<!-- suelo -->
+<a-entity id="apartment" position="10 0 -20" rotation="0 90 0" obj-model="obj: url(objets/apartment-house-obj/apartment-house.obj); mtl: url(objets/apartment-house-obj/apartment-house.mtl)" scale="0.035 0.035 0.035"></a-entity>
+<a-entity id="mountain" position="0 -12 400" rotation="0 0 0" obj-model="obj: url(objets/mountain-obj/mountain2.obj); mtl: url(objets/mountain-obj/mountain2.mtl)" scale="5 5 5"></a-entity>
+<a-entity position="100 4 -50" rotation="0 0 0" geometry="type:box;width:500;height:8;depth:1" material="src: materials/HIERBA.png;repeat: 40 1;"></a-entity>
+<a-entity position="100 4 100" rotation="0 0 0" geometry="type:box;width:1000;height:8;depth:1" material="src: materials/HIERBA.png;repeat: 40 1;"></a-entity>
+<a-entity position="100 4 0" rotation="0 90 0" geometry="type:box;width:500;height:8;depth:1" material="src: materials/HIERBA.png;repeat: 40 1;"></a-entity>
+<a-entity position="-100 4 0" rotation="0 90 0" geometry="type:box;width:500;height:8;depth:1" material="src: materials/HIERBA.png;repeat: 40 1;"></a-entity>
+<a-ocean position="-40 0.5 -10" color="aqua" depth="10" width="20"></a-ocean>
+<a-box position="-40 0.1 -10" color="rgb(67, 129, 184)" depth="12" width="20"></a-box>
+<a-box position="-51 0.5 -10" rotation="0 90 0" material="src: materials/materialterciopelorojo.jpeg;color:red;" depth="3" width="12" height="1" static-body></a-box>
+<a-box position="-29 0.5 -10" rotation="0 90 0" material="src: materials/materialterciopelorojo.jpeg;color:red;" depth="3" width="12" height="1" static-body></a-box>
+<a-box position="-40 0.5 -4" rotation="0 0 0" material="src: materials/materialterciopelorojo.jpeg;color:red;" depth="1" width="22" height="1" static-body></a-box>
+<a-box position="-40 0.5 -16" rotation="0 0 0" material="src: materials/materialterciopelorojo.jpeg;color:red;" depth="1" width="22" height="1" static-body></a-box>
+<a-box position="-54 0.5 -10" rotation="-10 90 0" material="src: materials/materialterciopelorojo.jpeg;color:red;" depth="6" width="12" height="0.1" static-body></a-box>
+<a-box position="-25 0.5 -10" rotation="10 90 0" material="src: materials/materialterciopelorojo.jpeg;color:red;" depth="6" width="12" height="0.1" static-body></a-box>
+<a-box position="-40 0.2 -10" material="src: materials/hierba2.png;repeat: 40 1;" depth="18" width="40" height="0.1" static-body></a-box>
+<!--panel POKEMON-->
+<a-box position="-35 5 -10" rotation="0 90 0" material="color:rgba(180, 189, 50, 0.438);opacity:0.5" depth="0.1" height="4" width="9">
+<a-entity position="-3.5 2 0.5" text-geometry="value: COMBATE POKEMON" material="color:red;"></a-entity>
+<a-entity id="selecgimnasio" position="-4 0.8 0.5" text-geometry="value:SELECCIONAR GIMNASIO" width="1" material="color:rgba(241, 31, 31, 0.623);" selecgimnasio-events></a-entity>
+<a-box position="0 1.1 0.4" width="8.45" height="0.7" depth="0.1" material="color:rgba(31, 147, 241, 0.781); opacity:0.8" selecgimnasio-events></a-box>
+<a-entity id="opcionesgim" position="-1.8 -0.4 0.5" text-geometry="value:OPCIONES" width="1" material="color:rgba(241, 31, 31, 0.623);" opcionesgim-events></a-entity>
+<a-box position="0 -0.1 0.4" width="8.45" height="0.7" depth="0.1" material="color:rgba(31, 147, 241, 0.781);opacity:0.8" opcionesgim-events></a-box>
+<a-entity id="comenzar" position="-2 -1.6 0.5" text-geometry="value:COMENZAR" width="1" material="color:rgb(201, 51, 31);" comenzar-events></a-entity>
+<a-box position="0 -1.3 0.4" width="8.45" height="0.7" depth="0.1" material="color:rgb(21, 147, 151);opacity:0.8" comenzar-events></a-box>
+<a-entity id="atras" position="5 -0.4 0.5" text-geometry="value: ../ " width="1" material="color:rgb(201, 51, 31);" atras-events></a-entity>
+<a-box position="5.3 -0.1 0.4" width="1" height="0.7" depth="0.1" material="color:rgba(241, 237, 31, 0.938);opacity:0.8" atras-events></a-box>
+</a-box>
+<a-box id="escalera" position="5 1.9 -19.2" rotation="-38 120 0" material="color:white;opacity:1" depth="6" width="1.4" height="0.1" static-body></a-box>
+<a-box id="escalerax" position="7.8 3.5 -20" rotation="0 0 10" material="color:red;opacity:1" depth="8" width="0.80" height="0.1" static-body></a-box>
+<a-box id="sueloaparta1" position="12.35 0.1 -20" rotation="0 0 0" material="src: materials/imagenmadera.jpg;repeat:2 2;color:rgba(156, 61, 6, 0.746);" depth="15.9" width="8.2" height="0.1" static-body></a-box>
+<a-entity id="puerta1" position="8.2 1.3 -17.05" rotation="0 90 0" geometry="type:box;depth:0.2; width:0.8; height:2.3;" material="src: materials/imagenmadera.jpg;repeat:;color:rgba(97, 52, 26, 0.979);" static-body puertas-events></a-entity>
+<a-box id="puerta2" position="8.2 1.3 -22.85" rotation="0 90 0" material="src: materials/imagenmadera.jpg;repeat:;color:rgba(97, 52, 26, 0.979);" depth="0.2" width="0.8" height="2.3" static-body></a-box>
+<a-box id="puerta3" position="8.2 4.8 -17.05" rotation="0 90 0" material="src: materials/imagenmadera.jpg;repeat:;color:rgba(97, 52, 26, 0.979);" depth="0.2" width="0.8" height="2.3" static-body></a-box>
+<a-box id="puerta4" position="8.2 4.8 -22.85" rotation="0 90 0" material="src: materials/imagenmadera.jpg;repeat:;color:rgba(97, 52, 26, 0.979);" depth="0.2" width="0.8" height="2.3" static-body></a-box>
+<a-box id="puerta5" position="16.6 1.3 -15.25" rotation="0 90 0" material="src: materials/imagenmadera.jpg;repeat:;color:rgba(97, 52, 26, 0.979);" depth="0.2" width="0.8" height="2.3" static-body></a-box>
+<a-box id="puerta6" position="16.6 1.3 -24.65" rotation="0 90 0" material="src: materials/imagenmadera.jpg;repeat:;color:rgba(97, 52, 26, 0.979);" depth="0.2" width="0.8" height="2.3" static-body></a-box>
+<a-box id="sueloaparta2" position="12.35 3.6 -20" rotation="0 0 0" material="src: materials/imagenmadera.jpg;repeat:2 2;color:rgba(156, 61, 6, 0.746);" depth="15.9" width="8.2" height="0.1" static-body></a-box>
+<a-box id="sueloaparta21" position="12.35 3.4 -20" rotation="0 0 0" material="src: materials/imagenmadera.jpg;repeat:1 1;color:rgba(255, 242, 167, 0.979);" depth="15.9" width="8.2" height="0.05" static-body></a-box>
+<!--ascensor-->
+<a-box id="ascensor1" position="12.5 4 -27.8" rotation="0 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="0.2" width="4" height="8" static-body></a-box>
+<a-box id="ascensorz" position="12.5 0.2 -26.3" rotation="90 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="0.2" width="4" height="3"></a-box>
+<a-box id="ascensor2" position="14.5 4 -26.3" rotation="0 90 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);opacity:0.5" depth="0.2" width="3" height="8" static-body></a-box>
+<a-box id="ascensor3" position="10.5 4 -26.3" rotation="0 90 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);opacity:0.5" depth="0.2" width="3" height="8" static-body></a-box>
+<a-box id="ascensorz2" position="12.5 3.6 -26.3" rotation="90 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="0.2" width="4" height="3" static-body></a-box>
+<a-box id="ascensorz3" position="12.5 7.6 -26.3" rotation="90 0 0" material="src: materials/materialmetal1.jpg;repeat:;color:rgba(111, 141, 153, 0.781);" depth="0.2" width="4" height="3"></a-box>
+<a-entity id="abccas" position="12.4 1.8 -27.65" rotation="0 0 0" text-geometry="value:1" material="color:red" width="0.1" scale="0.5 0.5 0.5" btnsub-events></a-entity>
+<a-cylinder id="btnsub" position="12.5 1.9 -27.7" rotation="90 0 0" material="src: materials/materialoro.jpg;repeat:;color:rgb(255, 251, 0);" height="0.1" radius="0.2" btnsub-events></a-cylinder>
+<a-entity position="12.4 1.3 -27.65" rotation="0 0 0" text-geometry="value:0" material="color:red" width="0.1" scale="0.5 0.5 0.5" btnbaj-events></a-entity>
+<a-cylinder id="btnbaj" position="12.5 1.4 -27.7" rotation="90 0 0" material="src: materials/materialoro.jpg;repeat:;color:rgb(255, 251, 0);" height="0.1" radius="0.2" btnbaj-events></a-cylinder>
+<a-entity position="12.4 5.3 -27.65" rotation="0 0 0" text-geometry="value:1" material="color:red" width="0.1" scale="0.5 0.5 0.5" btnsub-events></a-entity>
+<a-cylinder id="btnsub2" position="12.5 5.4 -27.7" rotation="90 0 0" material="src: materials/materialoro.jpg;repeat:;color:rgb(255, 251, 0);" height="0.1" radius="0.2" btnsub-events></a-cylinder>
+<a-entity position="12.4 4.8 -27.65" rotation="0 0 0" text-geometry="value:0" material="color:red" width="0.1" scale="0.5 0.5 0.5" btnbaj-events></a-entity>
+<a-cylinder id="btnbaj2" position="12.5 4.9 -27.7" rotation="90 0 0" material="src: materials/materialoro.jpg;repeat:;color:rgb(255, 251, 0);" height="0.1" radius="0.2" btnbaj-events></a-cylinder>
+<!--fin--- ascensor-->
+<div style="color: rgb(255, 251, 0);"></div>
+<a-entity position="-19 10 -48" rotation="0 0 0" text-geometry="value:Proces = 54h" material="color:black" width="0.1" scale="5 5 5"></a-entity>
+<!--pokemons-->
+<a-entity id="bulbasur" position="12 0.1 -14" rotation="0 -135 0" obj-model="obj: url(objets//bulbasur/bulbasaur-pokemon-go.obj); mtl: url(objets//bulbasur/bulbasaur-pokemon-go.mtl)" material="color:yellow" scale="0.15 0.15 0.15"></a-entity>
+<a-entity id="charizar" position="46 0 -31" rotation="0 -45 0" obj-model="obj: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.obj); mtl: url(https://abc3developer.github.io/Pokemon-VR/objets/charizar/charizard-pokemon-go.mtl)" scale="1 1 1"></a-entity>
+
 </a-scene>
  <script src="main.js">
  </script>
